@@ -22,7 +22,9 @@ Loss function: a combination of F1 loss, Focal loss and Cross Entropy loss.
 ## Results
 
 - Graph Neural Network models give very inaccurate predictions (less than 20% accuracy, f1 score around 0.2).
-- Convolutional Neural Network models have much better performance in predicting raining (f1 score around 0.75). See the following confusion matrix and the sample visualization on the spatial map. 
+- Convolutional Neural Network models have much better performance in predicting raining (The scores on test dataset are F1: 0.7679, Accuracy: 0.9388, Precision: 0.7712, Recall: 0.7646).
+  
+  See the following visualizations: confusion matrix and the sample visualization on the spatial map. 
   
    <img src="https://github.com/user-attachments/assets/c8db090b-6246-4a79-99fb-f01c45c08a30" width = "600">
 
