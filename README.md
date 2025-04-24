@@ -11,4 +11,20 @@ The weather dataset is spatial-temporal data. We restrict the spatial region to 
 
 We use data in the previous 12 hours to predict raining or not in the next 6 hours. We use 12-hour sliding window to construct the sample and 6-hour sliding window to construct the corresponding target label. The target is labeled raining if the total precipitation in the next 6 hours are larger than 1mm. To train GNN model, the data is converted to graph format. Each grid is treated as a node on the graph. The edges are from the 4 nearest grid points and 4 nearest diagonal grid points, in total 8 edge lines. 
 
+The dataset is highly imbalanced with less than 10% labeled as raining. 
+
 ## Modeling 
+- Convolutional Neural Network
+- Graph Neural Network
+
+Loss function: a combination of F1 loss, Focal loss and Cross Entropy loss.
+
+## Results
+
+- Graph Neural Network models give very inaccurate predictions (less than 20% accuracy, f1 score around 0.2).
+- Convolutional Neural Network models have much better performance in predicting raining (f1 score around 0.75). See the following confusion matrix and the sample visualization on the spatial map. 
+  
+   ![CNN_confusion_matrix_row_normalized](https://github.com/user-attachments/assets/c8db090b-6246-4a79-99fb-f01c45c08a30)
+
+  ![CNN_spatial_prediction_100](https://github.com/user-attachments/assets/071e5dc6-2b86-4dbb-86ae-377ce31d8a86)
+
