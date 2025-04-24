@@ -1,5 +1,5 @@
 # Rain-Prediction
-Erdos Institute Deep Learning Course Project
+Erdos Institute Spring 2025 Deep Learning Course Project
 
 The goal is to predict whether it rains or not in the next 6 hours using Convolutional Neural Network (CNN) and Graph Neural Network (GNN). The weather forecasting data is from ERA5 (European Centre for Medium-Range Weather Forecasts (ECMWF) https://cds.climate.copernicus.eu/) single-level hourly data. Only the months of January, February, March of 2025 have been used. 
 
@@ -21,7 +21,7 @@ Loss function: a combination of F1 loss, Focal loss and Cross Entropy loss.
 
 ## Results
 
-- Graph Neural Network models give very inaccurate predictions (less than 20% accuracy, f1 score around 0.2).
+- Graph Neural Network models gives very inaccurate predictions (less than 20% accuracy, f1 score around 0.2).
 - Convolutional Neural Network models have much better performance in predicting raining (The scores on test dataset are F1: 0.7679, Accuracy: 0.9388, Precision: 0.7712, Recall: 0.7646).
   
   See the following visualizations: confusion matrix and the sample visualization on the spatial map. 
