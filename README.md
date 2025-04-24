@@ -30,3 +30,7 @@ Loss function: a combination of F1 loss, Focal loss and Cross Entropy loss.
 
   <img src="https://github.com/user-attachments/assets/071e5dc6-2b86-4dbb-86ae-377ce31d8a86" width = "800">
 
+## Outlook
+
+Of course, if more computational resources are available, one should scale up the dataset and the CNN structure. It will be very interesting to figure out why the GNN model behaves much worse than a typical CNN model. 
+
